@@ -1,2 +1,8 @@
 /* Напишите функцию, которая создает пустой объект, но без прототипа. */
-const secondObjectB = Object.create(Object.prototype);
+
+function createObj() {
+	return Object.create(null);
+}
+sampleObj = createObj();
+
+console.log(Object.getPrototypeOf(sampleObj));
